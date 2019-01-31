@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body { font-family: 'Roboto', sans-serif; }
+
+.container .sub-container nav.desk,
+.container .sub-container nav.mobile { width: 100%; background: #001f3f; height: 60px;
+                                     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+                                     position: fixed; top: 0; left: 0;
+                                    
+                                   }
+                            
+nav.desk ul { list-style: none; width: 75%; height: 60px; margin: 0 auto; }
+
+nav.desk ul li { width: 20%; float: left; text-align: center; line-height: 60px;
+                 text-transform: uppercase; cursor: pointer; transition: all 0.5s ease;
+
+               }
+
+nav ul li:hover { background: #1E90FF; }
+
+nav ul li.active { background: #1E90FF; }
+
+nav ul li a { color: #fff; text-decoration: none; }
+
+nav.mobile, .hamburger-btn { display: none; }
+
+.header { background: url('../img/placide.jpg') no-repeat center;
+          background-size: cover; width: 100%; height: 600px;
+        }
+
+@media screen and (max-width: 700px)
+{
+  nav.desk { display: none; }
+  
+  nav.mobile, .hamburger-btn { display: block; }
+
+  .hamburger-btn { position: relative; }
+
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times
+  {
+      position: fixed;
+      right: 25px;
+      top: 15px;
+      font-size: 35px;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  .mobile ul { margin-top: 60px; background: #001f3f; display: none; }
+
+  .mobile li { text-transform: uppercase; text-align: center; padding: 20px; cursor: pointer; }
+
+  .mobile ul.active { display: block; }
+}
+
+
+
+
+
+
+
+
+
