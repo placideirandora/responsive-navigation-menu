@@ -7,7 +7,7 @@
     user-select: none;
 }
 
-body { font-family: 'Roboto', sans-serif; }
+body { font-family: 'Roboto', sans-serif; background: #f2f2f2; }
 
 .container .sub-container nav.desktop,
 .container .sub-container nav.mobile { width: 100%; background: #001f3f; height: 60px;
