@@ -9,16 +9,16 @@
 
 body { font-family: 'Roboto', sans-serif; }
 
-.container .sub-container nav.desk,
+.container .sub-container nav.desktop,
 .container .sub-container nav.mobile { width: 100%; background: #001f3f; height: 60px;
                                      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
                                      position: fixed; top: 0; left: 0;
                                     
                                    }
                             
-nav.desk ul { list-style: none; width: 75%; height: 60px; margin: 0 auto; }
+nav.desktop ul { list-style: none; width: 75%; height: 60px; margin: 0 auto; }
 
-nav.desk ul li { width: 20%; float: left; text-align: center; line-height: 60px;
+nav.desktop ul li { width: 20%; float: left; text-align: center; line-height: 60px;
                  text-transform: uppercase; cursor: pointer; transition: all 0.5s ease;
 
                }
@@ -37,7 +37,7 @@ nav.mobile, .hamburger-btn { display: none; }
 
 @media screen and (max-width: 700px)
 {
-  nav.desk { display: none; }
+  nav.desktop { display: none; }
   
   nav.mobile, .hamburger-btn { display: block; }
 
